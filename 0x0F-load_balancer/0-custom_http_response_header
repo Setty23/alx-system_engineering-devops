@@ -33,7 +33,7 @@ echo "server {
         return 301 https://www.youtube.com/watch?v=3lFkDc6dFoY;
     }
 
-    add_header X-Served-By $server_name;
+    add_header X-Served-By \$hostname;
 	
 }
 " > /etc/nginx/sites-enabled/default
